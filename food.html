@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Food Selection</title>
+    <style>
+        body {
+            text-align: center;
+            margin-top: 30px;
+            font-family: 'Courier';
+            background-color:#FFF5E4;
+            color: #FF9494;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh; /* Đảm bảo trang chiếm toàn bộ chiều cao của màn hình */
+        }
+        #foodquestion {
+            font-size: 40px;
+            margin-bottom: 10px;
+        }
+        .food-selection {
+            display: inline-block;
+            position: relative; /* Để button có thể được căn giữa */
+        }
+        .food-item {
+            display: inline-block;
+            margin: 10px;
+            vertical-align: top;
+            color: #FF9494;
+        }
+        .food-item img {
+            width: 200px; 
+            height: auto;
+            padding: 10px;
+        }
+        .food-item label {
+            display: block;
+        }
+        .button {
+            padding: 10px 20px;
+            font-size: 18px;
+            cursor: pointer;
+            margin: 10px;
+            font-family: 'courier';
+            background-color:#FFE3E1;
+            color: #e67373;
+            border-radius: 12px;
+            border: 2px solid #FFE3E1;
+            margin-top: 10%; 
+            /* float: center; Block sẽ được đặt sang phải */
+            margin-left: 2.5%;
+        }
+    </style>
+</head>
+<body>
+    <div id="foodquestion"><b style="text-decoration: underline;">What food would you like to eat?</b></div>
+    
+    <form action="/actions/action_food.php" method="post" class="food-selection">
+        <div class="food-item">
+            <img src="food/burgers.jpeg" alt="Burgers, fries and fried chicken">
+            <label><input type="checkbox" name="food[]" value="Burgers, fries and fried chicken"> burgers and fried chicken</label>
+        </div>
+        <div class="food-item">
+            <img src="food/dog.jpeg" alt="dog">
+            <label><input type="checkbox" name="food[]" value="hotdog"> hotdog</label>
+        </div>
+        <div class="food-item">
+            <img src="food/koreanfood.jpeg" alt="koreanfood">
+            <label><input type="checkbox" name="food[]" value="Korean food"> korean food</label>
+        </div>
+        <div class="food-item">
+            <img src="food/pasta.jpeg" alt="pasta">
+            <label><input type="checkbox" name="food[]" value="pasta"> pasta</label>
+        </div>
+        <div class="food-item">
+            <img src="food/pizza.jpeg" alt="pizza">
+            <label><input type="checkbox" name="food[]" value="pizza"> pizza</label>
+        </div>
+        <div class="food-item">
+            <img src="food/salad.jpeg" alt="salad">
+            <label><input type="checkbox" name="food[]" value="salad"> salad</label>
+        </div>
+        <div class="food-item">
+            <img src="food/steak.jpeg" alt="steak">
+            <label><input type="checkbox" name="food[]" value="steak"> steak</label>
+        </div>
+        <div class="food-item">
+            <img src="food/sushi.jpeg" alt="sushi">
+            <label><input type="checkbox" name="food[]" value="sushi">sushi</label>
+        </div>
+        <button class ="button" type="submit">Continue UWU</button>
+    </form>
+    
+</body>
+</html>

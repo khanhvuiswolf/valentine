@@ -1,0 +1,10 @@
+Dessert: coffee
+Activity: cinema
+Activity: cinema
+Date: 2035-12-21
+Food: hotdog
+Food: steak
+Food: sushi
+Dessert: coffee
+Activity: ceramics
+Activity: basketball
